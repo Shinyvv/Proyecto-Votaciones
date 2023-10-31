@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #contenedor {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 600px;
+            height: 350px;
+        }
+        #contenedor p {
+            text-align: center;
+        }
+        #contenedor input[type="submit"] {
+            float: auto;
+            text-align: left;
+        }
+        #botonCrearContainer {
+            text-align: right;
+            padding-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        #botonCrearContainer {
+            text-align: right;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="contenedor">
+            <h3>Resultado de la votación</h3>
+            <fieldset>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Votos</th>
+                    </tr>
+                    <tr>
+                        <td>Diego</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Luis</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+                <input type="submit" value="Diego fue eliminado" style="text-align:left;">
+                <div id="botonCrearContainer">
+                    <input type="submit" value="volver"  formaction="Votaciones.html" />
+                    </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

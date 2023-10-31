@@ -54,6 +54,11 @@
             color: darkblue;
             text-decoration: none;
         }
+        #botonCrearContainer {
+            text-align: right;
+            padding-top: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -93,9 +98,41 @@
                 </div>
                 
                 <div id="botonCrearContainer">
-                    <input type="submit" value="Refrescar" formaction="Votaciones.html" />
+                    <input type="submit"value=volver formaction="HomePage.html" style="text-align: left;"><input type="submit" value="Refrescar" formaction="Votaciones.html" />
                 </div>
             </fieldset>
+        </div>
+        <div id="contenedor">
+            <h1 style="text-align: left;">Evento en vivo</h1>
+            <h6>Nominados por el publico</h6>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Votos</th>
+                </tr>
+                <tr>
+                    <td>carlos</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>20</td>
+                </tr>
+            </table>
+            <select id="Selecciona tu voto">
+                <option >Selecciona tu voto</option>
+                <option >Maria</option>
+                <option >Luis</option>
+                <option>Carlos</option>
+              </select>
+              <div id="botonCrearContainer">
+                <input type="submit" value="Votar"  formaction="Votaciones.html" />
+                </div>
+            
         </div>
     </form>
 </body>

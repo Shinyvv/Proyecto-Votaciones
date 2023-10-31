@@ -4,33 +4,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-.boton-crearvotacion {
-  position: absolute;
-  top: -20px;
-  right: 20px;
-}
-
-.boton-homepage {
-  position: absolute;
-  top: -20px;
-  right: 160px;
-}
-
-.card {
-  height: 260px;
-}
-
-
-
- .content-container {
-  border: 1px solid #ccc;
-  /* Define un borde sólido de 1 píxel con un color de tu elección */
-  border-radius: 10px;
-  /* Redondea las esquinas del borde */
-  padding: 20px;
-  /* Añade un espacio interno al contenido para separarlo del borde */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -291,7 +264,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  appearance: button;
+  -webkit-appearance: button;
 }
 
 button:not(:disabled),
@@ -319,7 +292,7 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  appearance: listbox;
+  -webkit-appearance: listbox;
 }
 
 textarea {
@@ -357,7 +330,7 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  appearance: none;
+  -webkit-appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
