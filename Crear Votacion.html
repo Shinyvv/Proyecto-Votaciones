@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #contenedor {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 500px;
+            height: auto;
+        }
+
+        #contenedor label {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        #contenedor input[type="text"] {
+            text-align: left;
+            width: 100%;
+        }
+
+        #botonCrearContainer {
+            text-align: right;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="contenedor">
+            <h1 style="text-align: left;">Crear Votación</h1>
+            <fieldset>
+                <div>
+                    <p>
+                        <label for="nominado1">Nominado 1:</label>
+                        <input id="nominado1" type="text" />
+                    </p>
+                    <p>
+                        <label for="nominado2">Nominado 2:</label>
+                        <input id="nominado2" type="text" />
+                    </p>
+                    <p>
+                        <label for="nominado3">Nominado 3:</label>
+                        <input id="nominado3" type="text" />
+                    </p>
+                </div>
+                
+                <div id="botonCrearContainer">
+                    <input type="submit" value="crear" formaction="gracias por responder.html" />
+                </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
