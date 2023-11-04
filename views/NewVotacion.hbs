@@ -17,15 +17,18 @@
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
-            width: 400px;
+            width: 500px;
+            height: auto;
         }
 
-        #contenedor p {
-            text-align: center;
+        #contenedor label {
+            text-align: left;
+            margin-left: 20px;
         }
 
-        #contenedor input[type="submit"] {
-            float: right;
+        #contenedor input[type="text"] {
+            text-align: left;
+            width: 100%;
         }
 
         #botonCrearContainer {
@@ -33,27 +36,31 @@
             padding-top: 10px;
         }
     </style>
-    <title>Página de ingreso</title>
+    <title>Creacion de votacion</title>
 </head>
 
 <body>
     <form>
         <div id="contenedor">
-            <h1 style="text-align: center;">Ingreso Admin UDP</h1>
+            <h1 style="text-align: left;">Crear Votación</h1>
             <fieldset>
                 <div>
                     <p>
-                        <label for="nombre_usuario">Rut:</label>
-                        <input id="nombre_usuario" style="max-width: 100px" placeholder="Rut" />
+                        <label for="nominado1">Nominado 1:</label>
+                        <input id="nominado1" type="text" />
                     </p>
                     <p>
-                        <label for="nombre_usuario">Contraseña:</label>
-                        <input id="nombre_usuario" style="max-width: 100px" placeholder="Contraseña" />
+                        <label for="nominado2">Nominado 2:</label>
+                        <input id="nominado2" type="text" />
+                    </p>
+                    <p>
+                        <label for="nominado3">Nominado 3:</label>
+                        <input id="nominado3" type="text" />
                     </p>
                 </div>
 
                 <div id="botonCrearContainer">
-                    <a href="/" class="btn btn-primary boton boton-homepage">Ingresar</a>
+                    <input type="submit" value="crear" formaction="/" />
                 </div>
             </fieldset>
         </div>

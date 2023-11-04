@@ -33,6 +33,7 @@
             padding-top: 10px;
         }
     </style>
+    <title>Página de registro</title>
 </head>
 
 <body>
@@ -40,7 +41,6 @@
         <div id="contenedor">
             <h1 style="text-align: center;">Registro Admin UDP</h1>
             <h2 style="text-align: center;">Ingrese sus datos</h2>
-            <fieldset>
                 <div>
                     <p>
                         <label for="nombre_usuario">Nombre Completo:</label>
@@ -59,11 +59,12 @@
                         <input id="nombre_usuario" style="max-width: 100px" placeholder="Confirme Contraseña" />
                     </p>
                 </div>
-
-                <div id="botonCrearContainer">
-                    <input type="submit" value="crear" formaction="Registro completo.html" />
+            <center>
+                <div class="col-md-4 text-right"
+                    id="botonCrearContainer">
+                    <a href="/RegistroListo" class="btn btn-primary boton boton-homepage">Registrar</a>
                 </div>
-            </fieldset>
+            </center>
         </div>
     </form>
 </body>
